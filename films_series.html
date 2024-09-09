@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Courtel Maëlys</title>
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="films_series.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Page principale -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Barre de navigation -->
+      <div class="nav_menu fixed-width col-2 bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark flex-column">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav flex-column align-items-center">
+              <li class="nav-item">
+                <div class="col-2">
+                  <img src="img/moi.webp" class="image_perso" aria-hidden="true" />
+                </div>
+                <hr class="line">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><span>A PROPOS</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="competences.html"><span>COMPÉTENCES</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html"><span>PORTFOLIO</span></a>
+              </li>
+              <li>
+                <a class="contact_icon" href="https://www.linkedin.com/in/ma%C3%ABlys-courtel/" target="_blank">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a class="contact_icon" href="index.html#contact-info">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Contenu de la page -->
+      <div class="frame col-md-8 col-lg-10 col-sm-12 col-xs-12">
+        <!--Fenêtre d'accessibilité-->
+        <div class="d-flex justify-content-end">
+          <button id="accessibilityBtn" class="btn-icon"><i class="fa-solid fa-universal-access"
+              aria-hidden="true"></i></button>
+        </div>
+        <div id="accessibilityFrame">
+          <h5>Confort de lecture</h5>
+          <div class="accessibility_card">
+            <div>
+              <label>Taille du texte</label>
+              <div class="accessibility_text_size">
+                <button id="decreaseTextSize" class="size_button"><i class="fa fa-minus"
+                    aria-hidden="true"></i></button>
+                <img class="accessibility_img" src="img/accessibility-font-size.webp" aria-hidden="true">
+                <button id="increaseTextSize" class="size_button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main>
+          <div class="main_page">
+            <!-- Section des films et séries -->
+            <section class="movies_series">
+              <div class="row">
+                <h1 class="pt-3 section_title">Films et séries</h1>
+                <hr>
+                <p class="subtitle">Pendant mon temps libre, j'aime regarder des films et des séries, principalement de
+                  genre policier, horreur, et criminel. J'apprécie aussi les comédies et les histoires romantiques, qui
+                  apportent une touche d'humour et de légèreté.</p>
+              </div>
+              <div class="w-100">
+                <ul class="movies_cards">
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/murder_serie.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Murder</h2>
+                          <span class="badge badge-info">Série</span>
+                          <p class="card__description">
+                            Un groupe d'étudiants en droit et leur professeure se retrouvent impliqués dans des
+                            meurtres, mêlant secrets et manipulations. </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/anatomy_serie.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Grey's Anatomy</h2>
+                          <span class="badge badge-info">Série</span>
+                          <p class="card__description">
+                            La vie des chirurgiens à l'hôpital Grey Sloan entre urgences médicales, drames personnels et
+                            histoires d'amour.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/babylone.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Babylon</h2>
+                          <span class="badge badge-info">Film</span>
+                          <p class="card__description">
+                            Hollywood des années 1920 : ascension et chute de stars dans un monde de débauche et de
+                            changements cinématographiques.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/cirque.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">The Greatest Showman</h2>
+                          <span class="badge badge-info">Film</span>
+                          <p class="card__description">L'histoire de P.T. Barnum, créateur de cirque, qui défie les
+                            normes et célèbre la diversité à travers des spectacles.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/dune.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Dune</h2>
+                          <span class="badge badge-info">Film</span>
+                          <p class="card__description">
+                            Paul Atreides, lié à la planète Arrakis, découvre ses pouvoirs et lutte pour survivre alors
+                            que des factions galactiques se disputent une ressource précieuse. </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/esther.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">The Esther</h2>
+                          <span class="badge badge-info">Film</span>
+                          <p class="card__description">Une jeune fille adoptée cache un secret terrifiant, menaçant sa
+                            nouvelle famille. Un thriller psychologique qui explore les thèmes de l'horreur et du
+                            suspense.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/fracture.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">La Fracture</h2>
+                          <span class="badge badge-info">Film</span>
+                          <p class="card__description">
+                            Un homme cherche sa femme et sa fille disparues dans un hôpital, sombrant dans une paranoïa
+                            où réalité et hallucination se confondent.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/hunger_game_serie.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Hunger Game</h2>
+                          <span class="badge badge-info">Film</span>
+                          <p class="card__description">
+                            Dans un futur dystopique, Katniss Everdeen participe aux Hunger Games, un jeu télévisé où
+                            des adolescents s’affrontent à mort, mettant en scène la résistance contre l’injustice.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/insidious.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Insidious</h2>
+                          <span class="badge badge-info">Film</span>
+                          <p class="card__description">
+                            Une famille découvre des phénomènes paranormaux dans leur nouvelle maison et réalise que
+                            leur fils est une passerelle vers un monde spectral effrayant.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/labyrinthe.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Labyrinthe</h2>
+                          <span class="badge badge-info">Film</span>
+                          <p class="card__description">
+                            Un groupe de jeunes se réveille dans un labyrinthe géant et dangereux sans souvenirs de leur
+                            passé, cherchant désespérément une issue.
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/rookie.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">The Rookie</h2>
+                          <span class="badge badge-info">Série</span>
+                          <p class="card__description">
+                            À 40 ans, John Nolan rejoint la police de Los Angeles comme le plus vieux recrue, défiant
+                            les préjugés et prouvant sa valeur malgré les difficultés de sa nouvelle carrière.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/pll.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Pretty Little Liars</h2>
+                          <span class="badge badge-info">Série</span>
+                          <p class="card__description">
+                            Après la disparition de leur amie Alison, quatre adolescentes reçoivent des messages
+                            menaçants de "A", une mystérieuse figure qui connait tous leurs secrets.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/sarah.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Elle s'appelait Sarah</h2>
+                          <span class="badge badge-info">Film</span>
+                          <p class="card__description">
+                            Le film suit une journaliste qui enquête sur l'histoire d'une jeune fille juive, Sarah, dont
+                            la famille a été déportée. Elle découvre un secret douloureux liant le passé et le présent.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/sweet_tooth.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Sweet Tooth</h2>
+                          <span class="badge badge-info">Série</span>
+                          <p class="card__description">
+                            Dans un monde post-apocalyptique où des hybrides mi-humains mi-animaux apparaissent, un
+                            jeune garçon à moitié cerf, Gus, entreprend un voyage pour retrouver sa mère.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/train.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Bullet Train</h2>
+                          <span class="badge badge-info">Film</span>
+                          <p class="card__description">
+                            Cinq assassins se retrouvent à bord d'un train à grande vitesse au Japon, chacun avec une
+                            mission différente qui semble interconnectée.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/visit.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">The Visit</h2>
+                          <span class="badge badge-info">Film</span>
+                          <p class="card__description">
+                            Deux enfants visitent leurs grands-parents inconnus et découvrent des comportements de plus
+                            en plus étranges.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/manifest.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">The Manifest</h2>
+                          <span class="badge badge-info">Série</span>
+                          <p class="card__description">
+                            Après le vol 828, un avion disparu depuis cinq ans refait surface sans que les passagers
+                            n'aient vieilli d'un jour. Les passagers doivent comprendre ce qui leur est arrivé.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/one_pice.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">One Piece</h2>
+                          <span class="badge badge-info">Série</span>
+                          <p class="card__description">
+                            Luffy et son équipage se lance dans une nouvelle aventure à la recherche d'un trésor
+                            légendaire. En chemin, ils affrontent de puissants ennemis et découvrent des alliés.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/bridgerton.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Bridgerton</h2>
+                          <span class="badge badge-info">Série</span>
+                          <p class="card__description">
+                            La haute société londonienne est pleine de romances et scandales, narrés par la mystérieuse
+                            Lady Whistledown.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/family_business.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Family Business</h2>
+                          <span class="badge badge-info">Série</span>
+                          <p class="card__description">
+                            Une famille française décide de convertir sa boucherie casher en "beucherie", un coffee shop
+                            de cannabis, après la légalisation prévue du cannabis en France.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                      <img class="card__background" src="img/films/murder_building.webp" aria-hidden="true" />
+                      <div class="card__content | flow">
+                        <div class="card__content--container | flow">
+                          <h2 class="card__title">Only murder in the building</h2>
+                          <span class="badge badge-info">Série</span>
+                          <p class="card__description">
+                            Trois voisins passionnés de true-crime enquêtent sur un meurtre dans leur immeuble et
+                            lancent un podcast pour suivre leur enquête.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <script src="accessibility.js"></script>
+
+</body>
+<footer>
+  <i class="fa fa-copyright" aria-hidden="true"></i>
+  <p>Tous droits réservés</p>
+</footer>
+
+</html>

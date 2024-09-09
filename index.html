@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Courtel Maëlys</title>
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="accueil.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Page principale -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Barre de navigation -->
+      <div class="nav_menu fixed-width col-2 bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark flex-column">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav flex-column align-items-center">
+              <li class="nav-item">
+                <div class="col-2">
+                  <img src="img/moi.webp" class="image_perso" aria-hidden="true" />
+                </div>
+                <hr class="line">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><span>A PROPOS</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="competences.html"><span>COMPÉTENCES</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html"><span>PORTFOLIO</span></a>
+              </li>
+              <li>
+                <a class="contact_icon" href="https://www.linkedin.com/in/ma%C3%ABlys-courtel/" target="_blank">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a class="contact_icon" href="#contact-info">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Contenu de la page -->
+      <div class="frame col-md-8 col-lg-10 col-sm-12 col-xs-12">
+        <!--Fenêtre d'accessibilité-->
+        <div class="d-flex justify-content-end">
+          <button id="accessibilityBtn" class="btn-icon"><i class="fa-solid fa-universal-access"
+              aria-hidden="true"></i></button>
+        </div>
+        <div id="accessibilityFrame">
+          <h5>Confort de lecture</h5>
+          <div class="accessibility_card">
+            <div>
+              <label>Taille du texte</label>
+              <div class="accessibility_text_size">
+                <button id="decreaseTextSize" class="size_button"><i class="fa fa-minus"
+                    aria-hidden="true"></i></button>
+                <img class="accessibility_img" src="img/accessibility-font-size.webp" aria-hidden="true">
+                <button id="increaseTextSize" class="size_button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main>
+          <section class="banner">
+            <div class="main_page">
+              <div class="w-100 ">
+                <!-- Bandeau d'accueil -->
+                <ul class="home_banner">
+                  <li>
+                    <div class="title_wrapper">
+                      <h1 class="main_title">
+                        <span data-text="Développeuse">Développeuse</span>
+                        <span data-text="Fullstack">Fullstack</span>
+                      </h1>
+                    </div>
+                    <div class="wrapper_subtitle">
+                      <div class="top">Ergonomie - Accessibilité</div>
+                      <div class="bottom" aria-hidden="true">Ergonomie - Accessibilité</div>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img/background-main-page.webp" class="img_home_banner" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="presentation">
+            <!-- Message de présentation -->
+            <div class="container d-flex justify-content-center">
+              <div class="chatbox mt-2 mb-4">
+                <div class="banner-chatbox d-flex flex-row justify-content-between p-3 adiv w-100">
+                  <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                  <span class="pb-3">Live chat</span>
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="d-flex flex-row p-3 justify-content-end">
+                  <div class="bg_white mr-2 p-3"><span>Salut 👋<br> Je m'appelle Maëlys, je suis
+                      ingénieure en développement de logiciels, spécialisée dans les langages et frameworks frontend et
+                      backend. J'ai à cœur de créer des interfaces intuitives, offrant des expériences utilisateurs
+                      fluides
+                      et attrayantes.🌟
+                      Créative et rigoureuse, je serais ravie de rejoindre une équipe dynamique pour relever de nouveaux
+                      défis et contribuer à des projets innovants. 🚀 <br> À bientôt ! 🤗</span></div>
+                  <img class="img_avatar" src="img/avatar.webp" width="40" height="40" aria-hidden="true">
+                </div>
+                <div class="message_zone px-3">
+                  <textarea class="message" rows="1" placeholder="Écrire un message"></textarea>
+                </div>
+              </div>
+              <!-- Bulles qui se déplacent -->
+              <div class="blob blob_1" aria-hidden="true"></div>
+              <div class="blob blob_2" aria-hidden="true"></div>
+              <div class="blob blob_3" aria-hidden="true"></div>
+            </div>
+          </section>
+
+          <!-- Mes passions -->
+          <section class="hobbies">
+            <div class="row">
+              <h1 class="pt-3 section_title">Centres d'intérêts</h1>
+              <hr>
+              <p class="subtitle">Dans mon temps libre, j'aime réaliser des tableaux, des broderies et d'autres
+                activités manuelles qui stimulent ma créativité. J'apprécie aussi voyager, découvrir de nouveaux
+                horizons, faire du sport pour rester active, et m'évader dans l'univers des films, des séries et des
+                livres.</p>
+            </div>
+            <div class="w-100">
+              <ul class="hobbies_cards">
+                <li>
+                  <a href="creations.html" class="hobby_card">
+                    <img src="img/img-creation.webp" class="hobby_card_img" aria-hidden="true" />
+                    <div class="hobby_card_overlay">
+                      <div class="hobby_card_header">
+                        <img class="hobby_card_thumb" src="img/logo-creation.webp" aria-hidden="true" />
+                        <div class="card__header_text">
+                          <h3 class="hobby_card_title">Les créations</h3>
+                          <span class="hobby_card_status">En savoir plus</span>
+                        </div>
+                      </div>
+                      <p class="hobby_card_description">Tableaux avec peintures acryliques, broderie sur oreiller,
+                        dessins, etc.</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="voyages.html" class="hobby_card">
+                    <img src="img/img-voyage.webp" class="hobby_card_img" aria-hidden="true" />
+                    <div class="hobby_card_overlay">
+                      <div class="hobby_card_header">
+                        <img class="hobby_card_thumb" src="img/logo_voyage.webp" aria-hidden="true" />
+                        <div class="card__header_text">
+                          <h3 class="hobby_card_title">Les voyages</h3>
+                          <span class="hobby_card_status">En savoir plus</span>
+                        </div>
+                      </div>
+                      <p class="hobby_card_description">Espagne, Italie, Pologne, Royaume-Unie, Belgique, Suisse, etc.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="sport.html" class="hobby_card">
+                    <img src="img/img-sport.webp" class="hobby_card_img" aria-hidden="true" />
+                    <div class="hobby_card_overlay">
+                      <div class="hobby_card_header">
+                        <img class="hobby_card_thumb" src="img/logo_sport.webp" aria-hidden="true" />
+                        <div class="card__header_text">
+                          <h3 class="hobby_card_title">Le sport</h3>
+                          <span class="hobby_card_status">En savoir plus</span>
+                        </div>
+                      </div>
+                      <p class="hobby_card_description">Gymnastique, danse, cours de fitness, cardio, etc.</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="films_series.html" class="hobby_card">
+                    <img src="img/img-film.webp" class="hobby_card_img" aria-hidden="true" />
+                    <div class="hobby_card_overlay">
+                      <div class="hobby_card_header">
+                        <img class="hobby_card_thumb" src="img/logo-cinema.webp" aria-hidden="true" />
+                        <div class="card__header_text">
+                          <h3 class="hobby_card_title">Les films et séries</h3>
+                          <span class="hobby_card_status">En savoir plus</span>
+                        </div>
+                      </div>
+                      <p class="hobby_card_description">Horreur, comédie, science-fiction, thriller, policier,
+                        documentaire, etc.</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Softs Skills -->
+          <section class="Softs-skills">
+            <div class="row">
+              <h1 class="pt-3 section_title">Compétences interpersonnelles</h1>
+              <hr>
+            </div>
+            <div class="w-100">
+              <ul class="visuals">
+                <li>
+                  <div class="visual">
+                    <!-- Circle 1, Animation : Ripple -->
+                    <svg viewBox="0 0 320 320">
+                      <defs>
+                        <circle cx="50%" cy="50%" r="25%" />
+                      </defs>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" begin="1s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="1s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" begin="2s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="2s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" begin="3s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="3s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle class="circle" cx="50%" cy="50%" r="20%" fill="white" />
+                      <text x="50%" y="50%" font-size="16" fill="black" text-anchor="middle"
+                        alignment-baseline="middle">Créativité</text>
+                    </svg>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="visual">
+                    <!-- Circle 2, Animation : Bloom -->
+                    <svg viewBox="0 0 320 320">
+                      <defs>
+                        <circle cx="50%" cy="50%" r="25%" />
+                      </defs>
+                      <circle cx="50%" cy="50%" r="25%" fill="#92C7F2" fill-opacity="0.5">
+                        <animate attributeName="cx" values="50%;45%;40%;50%;45%;50%;40%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                        <animate attributeName="cy" values="50%;45%;40%;50%;45%;50%;40%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#92C7F2" fill-opacity="0.5">
+                        <animate attributeName="cx" values="50%;55%;60%;50%;55%;50%;60%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                        <animate attributeName="cy" values="50%;55%;60%;50%;55%;50%;60%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#92C7F2" fill-opacity="0.5">
+                        <animate attributeName="cx" values="50%;45%;40%;50%;45%;50%;40%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                        <animate attributeName="cy" values="50%;55%;60%;50%;55%;50%;60%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#92C7F2" fill-opacity="0.5">
+                        <animate attributeName="cx" values="50%;55%;60%;50%;55%;50%;60%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                        <animate attributeName="cy" values="50%;45%;40%;50%;45%;50%;40%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle class="circle" cx="50%" cy="50%" r="20%" fill="white" />
+                      <text x="50%" y="50%" font-size="16" fill="black" text-anchor="middle"
+                        alignment-baseline="middle">Esprit d'équipe</text>
+                    </svg>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="visual">
+                    <!-- Circle 3, Animation : Pulse -->
+                    <svg viewBox="0 0 320 320">
+                      <defs>
+                        <circle cx="50%" cy="50%" r="25%" />
+                      </defs>
+                      <circle cx="50%" cy="50%" r="50%" fill="#8687FC" fill-opacity="0.75">
+                        <animate attributeName="r" values="25%;30%;40%;25%;30%;25%;40%;25%" dur="7s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle class="circle" cx="50%" cy="50%" r="20%" fill="white" />
+                      <text x="50%" y="50%" font-size="16" fill="black" text-anchor="middle"
+                        alignment-baseline="middle">Adaptabilité</text>
+                    </svg>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="visual">
+                    <!-- Circle 4, Animation : Scaled Ripple -->
+                    <svg viewBox="0 0 320 320">
+                      <defs>
+                        <circle cx="50%" cy="50%" r="25%" />
+                      </defs>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" begin="1s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="1s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" begin="2s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="2s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" begin="3s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="3s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle class="circle" cx="50%" cy="50%" r="20%" fill="white" />
+                      <text x="50%" y="50%" font-size="16" fill="black" text-anchor="middle"
+                        alignment-baseline="middle">Organisation</text>
+                    </svg>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="visual">
+                    <!-- Circle 5, Animation : Pulse -->
+                    <svg viewBox="0 0 320 320">
+                      <defs>
+                        <circle cx="50%" cy="50%" r="25%" />
+                      </defs>
+                      <circle cx="50%" cy="50%" r="50%" fill="#92C7F2" fill-opacity="0.75">
+                        <animate attributeName="r" values="25%;30%;40%;25%;30%;25%;40%;25%" dur="7s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle class="circle" cx="50%" cy="50%" r="20%" fill="white" />
+                      <text x="50%" y="50%" font-size="16" fill="black" text-anchor="middle"
+                        alignment-baseline="middle">Curiosité</text>
+                    </svg>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="visual">
+                    <!-- Circle 6, Animation : Ripple -->
+                    <svg viewBox="0 0 320 320">
+                      <defs>
+                        <circle cx="50%" cy="50%" r="25%" />
+                      </defs>
+                      <circle cx="50%" cy="50%" r="25%" fill="#8687FC" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#8687FC" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" begin="1s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="1s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#8687FC" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" begin="2s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="2s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#8687FC" fill-opacity="1">
+                        <animate attributeName="r" values="25%;50%" dur="4s" begin="3s" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="3s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle class="circle" cx="50%" cy="50%" r="20%" fill="white" />
+                      <text x="50%" y="50%" font-size="16" fill="black" text-anchor="middle"
+                        alignment-baseline="middle">Communication</text>
+                    </svg>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="visual">
+                    <!-- Circle 7, Animation : Bloom -->
+                    <svg viewBox="0 0 320 320">
+                      <defs>
+                        <circle cx="50%" cy="50%" r="25%" />
+                      </defs>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="0.5">
+                        <animate attributeName="cx" values="50%;45%;40%;50%;45%;50%;40%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                        <animate attributeName="cy" values="50%;45%;40%;50%;45%;50%;40%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="0.5">
+                        <animate attributeName="cx" values="50%;55%;60%;50%;55%;50%;60%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                        <animate attributeName="cy" values="50%;55%;60%;50%;55%;50%;60%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="0.5">
+                        <animate attributeName="cx" values="50%;45%;40%;50%;45%;50%;40%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                        <animate attributeName="cy" values="50%;55%;60%;50%;55%;50%;60%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="50%" cy="50%" r="25%" fill="#DBA8D9" fill-opacity="0.5">
+                        <animate attributeName="cx" values="50%;55%;60%;50%;55%;50%;60%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                        <animate attributeName="cy" values="50%;45%;40%;50%;45%;50%;40%;50%" dur="5s"
+                          repeatCount="indefinite" />
+                      </circle>
+                      <circle class="circle" cx="50%" cy="50%" r="20%" fill="white" />
+                      <text x="50%" y="50%" font-size="16" fill="black" text-anchor="middle"
+                        alignment-baseline="middle">Rigueur</text>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Contact mail -->
+          <section class="contact">
+            <div class="row w-100" id="contact-info">
+              <div class="col-md-4 col-sm-3 col-lg-6 d-flex align-items-center">
+                <img src="img/message.webp" class="img-fluid p-3" aria-hidden="true" />
+              </div>
+              <div class="col-lg-6 col-sm-3 col-md-4 contact d-flex align-items-center p-3">
+                <div class="w-100">
+                  <h1 class="title text-center mb-4">Me contacter !</h1>
+                  <div class="form-group position-relative">
+                    <label class="d-block">
+                      <i class="icon fas fa-user" aria-hidden="true"></i>
+                    </label>
+                    <div class="data_zone form-control-lg thick">Maëlys Courtel
+                    </div>
+                  </div>
+                  <div class="form-group position-relative">
+                    <label class="d-block">
+                      <i class="icon fas fa-envelope" aria-hidden="true"></i>
+                    </label>
+                    <div class="data_zone form-control-lg thick">
+                      maelys.courtel@gmail.com
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+  <script src="accessibility.js"></script>
+</body>
+<footer>
+  <i class="fa fa-copyright" aria-hidden="true"></i>
+  <p>Tous droits réservés</p>
+</footer>
+
+</html>

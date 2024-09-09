@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Courtel Maëlys</title>
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Page principale -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Barre de navigation -->
+      <div class="nav_menu fixed-width col-2 bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark flex-column">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav flex-column align-items-center">
+              <li class="nav-item">
+                <div class="col-2">
+                  <img src="img/moi.webp" class="image_perso" aria-hidden="true" />
+                </div>
+                <hr class="line">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><span>A PROPOS</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="competences.html"><span>COMPÉTENCES</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html"><span>PORTFOLIO</span></a>
+              </li>
+              <li>
+                <a class="contact_icon" href="https://www.linkedin.com/in/ma%C3%ABlys-courtel/" target="_blank">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a class="contact_icon" href="index.html#contact-info">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Contenu de la page -->
+      <div class="frame col-md-8 col-lg-10 col-sm-12 col-xs-12">
+        <!--Fenêtre d'accessibilité-->
+        <div class="d-flex justify-content-end">
+          <button id="accessibilityBtn" class="btn-icon"><i class="fa-solid fa-universal-access"
+              aria-hidden="true"></i></button>
+        </div>
+        <div id="accessibilityFrame">
+          <h5>Confort de lecture</h5>
+          <div class="accessibility_card">
+            <div>
+              <label>Taille du texte</label>
+              <div class="accessibility_text_size">
+                <button id="decreaseTextSize" class="size_button"><i class="fa fa-minus"
+                    aria-hidden="true"></i></button>
+                <img class="accessibility_img" src="img/accessibility-font-size.webp" aria-hidden="true">
+                <button id="increaseTextSize" class="size_button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Les différents projets -->
+        <main>
+          <div class="row">
+            <h1 class="pt-3 section_title">Portfolio</h1>
+            <hr>
+          </div>
+          <section>
+            <div class="w-100">
+              <nav>
+                <ul class="submenu">
+                  <li><a href="#!" class="active" id="show-all">Projets</a></li>
+                  <li><a href="#!" id="show-dev">Dev</a></li>
+                  <li><a href="#!" id="show-uxui">UX/UI</a></li>
+                </ul>
+              </nav>
+              <div class="wrapper">
+                <!-- Cartes de portfolio -->
+                <div class="cardtest card-dev" data-video-url="img/portfolio/pizzayolo.mp4"
+                  description="Ce projet scolaire visait à nous initier à divers langages de programmation. Nous devions concevoir un projet intéressant et le développer en HTML/CSS et Java. Nous avons choisi de créer une application de commande de pizzas. La partie destinée aux clients était un site web en HTML/CSS, leur permettant de découvrir le catalogue et de passer commande. L’autre partie, destinée aux pizzerias, était développée en Java et permettait de gérer les commandes en notant les étapes d’avancement.">
+                  <img class="img-portfolio" src="img/portfolio/pizzayolo.webp" alt="Mountain">
+                  <div class="info">
+                    <h1>Pizza Yolo</h1>
+                    <p class="subtitle">Un projet permettant aux clients de commander des pizzas en ligne tout en
+                      offrant aux pizzerias une application pour gérer les commandes de manière efficace.
+                    </p>
+                    <div class="badges">
+                      <span class="badge">HTML</span>
+                      <span class="badge">CSS</span>
+                      <span class="badge">JavaScript</span>
+                      <span class="badge">Java</span>
+                      <span class="badge">SQL</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardtest card-uxui" data-video-url="img/portfolio/green-it.mp4" description="L’objectif de ce projet scolaire était de sensibiliser à l’impact écologique de la création de sites web. Il s’agissait de concevoir une calculatrice d’empreinte carbone en développant un site aussi peu polluant que possible. Pour cela, nous avons étudié les bonnes pratiques, telles que l’évitement des images et des animations, ainsi que la réduction des requêtes volumineuses. Ce projet nous a permis de comprendre comment minimiser l’empreinte carbone des sites web tout en offrant une fonctionnalité utile.
+                  ">
+                  <img class="img-portfolio" src="img/portfolio/calculatrice.webp" alt="Road">
+                  <div class="info">
+                    <h1>Empreinte Carbonne</h1>
+                    <p class="subtitle">Site web permettant de calculer son empreinte carbone grâce à diverses
+                      informations.
+                    </p>
+                    <div class="badges">
+                      <span class="badge">Figma</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardtest card-uxui" data-video-url="img/portfolio/accessibility.mp4"
+                  description="Projet scolaire visant à redéfinir l’interface du site web d’Airbnb pour la rendre accessible à tous, y compris aux personnes en situation de handicap (visuel, moteur, etc.). Un mode simplifié a été ajouté, avec moins d’informations et une police de caractères agrandie, pour faciliter l’utilisation par les personnes ayant des déficiences visuelles ou des troubles de la concentration. De plus, nous avons intégré une zone de paramétrage d’accessibilité, permettant aux utilisateurs de personnaliser la taille du texte et l’espacement des caractères selon leurs besoins.">
+                  <img class="img-portfolio" src="img/portfolio/accessibility.webp" alt="Protester">
+                  <div class="info">
+                    <h1>AirBnb Accessibility
+                    </h1>
+                    <p class="subtitle">Étude approfondie du site web Airbnb pour améliorer son ergonomie et garantir
+                      une accessibilité optimale pour tous les utilisateurs.
+                    </p>
+                    <div class="badges">
+                      <span class="badge">Figma</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardtest card-dev" data-video-url="img/portfolio/bretagne.mp4"
+                  description="Ce site web a été développé en une demi-journée dans le cadre d’un projet scolaire. L’objectif était de créer une vitrine promotionnelle pour les îles du Morbihan, en les mettant en valeur à travers des photos, des descriptions détaillées et divers contenus informatifs. Ce projet vise à attirer l’attention sur la beauté de ces îles pour encourager le tourisme dans la région.">
+                  <img class="img-portfolio" src="img/portfolio/bretagne.webp" alt="Protester">
+                  <div class="info">
+                    <h1>Morbihan Tourisme</h1>
+                    <p class="subtitle">Ce site web a pour objectif de promouvoir les îles du Morbihan et d’augmenter
+                      le tourisme dans la région bretonne.
+                    </p>
+                    <div class="badges">
+                      <span class="badge">HTML</span>
+                      <span class="badge">CSS</span>
+                      <span class="badge">JavaScript</span>
+                      <span class="badge">bootstrap</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardtest card-uxui card-dev" data-video-url="img/portfolio/sondage.mp4" description="Ce projet scolaire avait pour objectif de découvrir le développement d’une application Android. L’application comprenait une interface de gestion sécurisée par mot de passe, permettant de gérer les projets et les formulaires. Les utilisateurs pouvaient créer, modifier, supprimer et activer des projets ou des formulaires. Une autre partie de l’application était destinée aux visiteurs, leur permettant de se renseigner sur les différents projets et de voter pour leur préféré.
+                  ">
+                  <img class="img-portfolio" src="img/portfolio/sondage_figma.webp" alt="Protester">
+                  <div class="info">
+                    <h1>Sondag'Eseo
+                    </h1>
+                    <p class="subtitle">Une application Android pour les journées portes ouvertes permettant aux
+                      visiteurs de voter pour leur projet favori parmi ceux présentés.
+                    </p>
+                    <div class="badges">
+                      <span class="badge">Figma</span>
+                      <span class="badge">Android</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardtest card-uxui card-dev" data-video-url="img/portfolio/pfe.mp4" description="En collaboration avec l’IRD et HydroSciences Montpellier, ce projet a pour objectif de centraliser toutes les données hydrologiques collectées à travers le monde dans une seule base de données. Actuellement, ces données sont dispersées dans plusieurs bases et traitées avec des logiciels externes comme Matlab. Le projet vise également à développer un logiciel interne intégrant toutes les fonctionnalités nécessaires pour le traitement et l’analyse des données. Pour pouvoir répondre aux besoins ce projet a été scindé en trois sous-projets distincts :
+                  - Agua : permet de visualiser les observatoires, les capteurs, les données et de traiter ces dernières au travers de différents graphes et fonctionnalités
+                  - AGF : permet de configurer les données et les comptes (accessible pour les administrateurs et gestionnaires)
+                  - API : sert de lien de communication entre les deux autres sous-projets et la base de données.
+                  ">
+                  <img class="img-portfolio" src="img/portfolio/agf.webp" alt="Protester">
+                  <div class="info">
+                    <h1>Agua & AGF</h1>
+                    <p class="subtitle">Ce projet vise à centraliser et analyser les données hydrologiques mondiales
+                      dans une base de données unique et un logiciel interne.
+                    </p>
+                    <div class="badges">
+                      <span class="badge">Figma</span>
+                      <span class="badge">React</span>
+                      <span class="badge">Hibernate</span>
+                      <span class="badge">Spring Boot</span>
+                      <span class="badge">SQL</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardtest card-uxui" data-video-url="img/portfolio/banque.mp4"
+                  description="L’objectif de ce projet est de réviser les étapes que l’utilisateur doit suivre pour accéder à ses comptes et informations bancaires. Nous proposons une nouvelle interface qui simplifie les actions à réaliser, rendant le processus plus intuitif et efficace pour l’utilisateur.">
+                  <img class="img-portfolio" src="img/portfolio/banque.webp" alt="Protester">
+                  <div class="info">
+                    <h1>Refonte Société Général</h1>
+                    <p class="subtitle">Refonte complète de l’interface utilisateur de l’application Société Générale
+                      pour la rendre plus intuitive et facile à utiliser.
+                    </p>
+                    <div class="badges">
+                      <span class="badge">Figma</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardtest card-dev" data-video-url="img/portfolio/portfolio.mp4" description="">
+                  <img class="img-portfolio" src="img/portfolio/portfolio.webp" alt="Protester">
+                  <div class="info">
+                    <h1>Portfolio</h1>
+                    <p class="subtitle">Développement d’un portfolio personnel pour présenter mon parcours, mes
+                      compétences en développement web et mes réalisations.
+                    </p>
+                    <div class="badges">
+                      <span class="badge">HTML</span>
+                      <span class="badge">CSS</span>
+                      <span class="badge">JavaScript</span>
+                      <span class="badge">Bootstrap</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardtest card-dev" data-video-url="img/portfolio/molkky.mp4"
+                  description="Ce projet scolaire avait pour objectif de développer une application complète en Java pour le club de Molkky d’Angers et ses adhérents. L’application permet au club de créer des tournois, de gérer les inscriptions et d’organiser les tournois (définition des matchs, ajout des scores, visualisation des équipes gagnantes, etc.). Les adhérents peuvent gérer leur équipe, s’inscrire à des tournois, consulter leur historique de tournois et leurs scores.">
+                  <img class="img-portfolio" src="img/portfolio/molkky.webp" alt="Protester">
+                  <div class="info">
+                    <h1>Projet Molkky</h1>
+                    <p class="subtitle">Développement d’une application Java pour le club de Molkky d’Angers,
+                      permettant de gérer les tournois, les équipes et les inscriptions.
+                    </p>
+                    <div class="badges">
+                      <span class="badge">Java</span>
+                      <span class="badge">Spring Boot</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panneau information projet -->
+  <div id="sidePanel" class="side-panel">
+    <div class="side-panel-content">
+      <button id="closePanel" class="close-btn">&times;</button> <!-- Close Button -->
+
+      <h2 id="panelTitle" class="panel-title">Card Title</h2>
+      <p id="panelSubtitle" class="panel-subtitle">Experience remorse writing at its amazing peak.</p>
+      <div class="panel-image">
+        <video id="panelVideo" controls>
+          <source id="videoSource" src="" type="video/mp4">
+          Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+      </div>
+      <div class="panel-description">
+        <h3>Description</h3>
+        <p id="panelDescription">Empty Carafes is a content platform that allows readers to engage in a wide range of
+          dynamic and innovative ideas expressed through different art forms.</p>
+      </div>
+      <div class="panel-technologies">
+        <h3>Technologies</h3>
+        <div class="badges" id="panelBadges">
+          <!-- Badges will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="panneau projet.js"></script>
+  <script src="accessibility.js"></script>
+
+</body>
+<footer>
+  <i class="fa fa-copyright" aria-hidden="true"></i>
+  <p>Tous droits réservés</p>
+</footer>
+
+</html>
