@@ -25,7 +25,7 @@
   display: grid;
   grid-gap: 1.1312rem;
   grid-template-columns: repeat(auto-fit, 12.8rem);
-  grid-auto-rows: 12.8rem;
+  grid-auto-rows: auto;
   grid-auto-flow: dense;
   justify-content: center;
   max-width: 75em;
