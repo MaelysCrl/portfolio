@@ -1,0 +1,310 @@
+:root {
+  --main-color: rgb(62, 60, 65);
+  --second-color: rgb(225, 231, 243);
+  --principal-text-color: rgb(183, 204, 219);
+  --other-color: rgb(241, 241, 243);
+  --pink-light: #DD70D1;
+  --pink-dark: #DBA8D9;
+  --purple: #8687FC;
+  --blue: #92C7F2;
+  --font-family: 'Calisto MT', sans-serif;
+  --title-font-size: 1.25rem;
+  --subtitle-font-size: 1rem;
+  --text-font-size: 0.875rem;
+  --other-font-size: 0.75rem;
+  --curve: 2.5rem;
+}
+
+
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 37.5rem;
+  margin: 0 auto;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5625rem;
+  color: #ddd;
+  position: relative;
+  margin-bottom: 3.125rem;
+  transition: all .2s;
+  overflow: hidden;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a:last-child {
+  margin-bottom: 0;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--second-color);
+  z-index: 99;
+  transition: all .4s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+nav a:hover::before {
+  left: 100%;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  margin-top: -0.125rem;
+  left: 100%;
+  width: 100%;
+  height: 0.25rem;
+  background: var(--second-color);
+  transition: all .3s;
+  transition-delay: .4s;
+}
+
+nav a:hover::after {
+  left: 0%;
+}
+
+.fixed-width {
+  width: 12.5rem !important;
+}
+
+hr.line {
+  border-top: 0.1875rem solid var(--principal-text-color);
+  opacity: 100%;
+  width: 12.8125rem;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.image_perso {
+  margin-top: 0.625rem;
+  width: 11.25rem;
+}
+
+.contact_icon {
+  display: block;
+  width: 3.75rem;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  font-size: 1.875rem;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  margin-top: 1.25rem;
+  transition: .5s;
+}
+
+.contact_icon span {
+  position: absolute;
+  transition: transform .5s;
+}
+
+.contact_icon span:nth-child(1),
+.contact_icon span:nth-child(3) {
+  width: 100%;
+  height: 0.1875rem;
+  background: var(--principal-text-color);
+}
+
+.contact_icon span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+
+.contact_icon:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s;
+}
+
+.contact_icon span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+
+.contact_icon:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s;
+}
+
+.contact_icon span:nth-child(2),
+.contact_icon span:nth-child(4) {
+  width: 0.1875rem;
+  height: 100%;
+  background: #404040;
+}
+
+.contact_icon span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+}
+
+.contact_icon:hover span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: top;
+  transition: transform .5s;
+}
+
+.contact_icon span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: scale(0);
+  transform-origin: top;
+}
+
+.contact_icon:hover span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition: transform .5s;
+}
+
+.contact_icon::after {
+  background: none;
+}
+
+.contact_icon::before {
+  background: none;
+}
+
+.contact_icon:hover {
+  color: #1da1f2;
+}
+
+.contact_icon:hover span {
+  background: #1da1f2;
+}
+
+.contact_icon {
+  color: #1da1f2;
+}
+
+.animation {
+  height: 3.125rem;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.animation>div>div {
+  padding: 0.25rem 0.75rem;
+  height: 2.8125rem;
+  margin-bottom: 2.8125rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+
+  25% {
+    margin-top: 0;
+  }
+
+  50% {
+    margin-top: -5.625rem;
+  }
+
+  75% {
+    margin-top: -5.625rem;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+/*Adapter le menu sur les petits écrans (téléphone)*/
+@media (max-width: 35rem) {
+  .nav_menu {
+    width: 100% !important;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    /* Change le menu en vertical sur petits écrans */
+    align-items: center;
+    /* Centre les éléments du menu */
+  }
+
+  .nav-item {
+    margin: 0.625rem 0;
+  }
+
+  .navbar-toggler {
+    border: none;
+    /* Enlève la bordure du bouton burger */
+    outline: none;
+    /* Enlève l'outline du bouton burger */
+  }
+
+  .wrapper_subtitle {
+    display: none !important;
+  }
+
+  .navbar-toggler::before {
+    content: '\2630';
+    /* Code Unicode pour une icône de menu burger */
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+
+  /* Ajuste la taille du texte et des liens du menu */
+  nav a {
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* Adapter le menu pour les écrans moyens (tablettes) et les grands écrans (ordinateurs)*/
+@media (min-width: 35rem) {
+  .navbar-nav {
+    flex-direction: row;
+    /* Assure que le menu est horizontal sur grands écrans */
+    justify-content: flex-end;
+    /* Aligne les éléments à droite */
+  }
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  padding-top: 1.25rem;
+}
+
+.btn-icon i {
+  font-size: 3.75rem;
+  color: var(--principal-text-color);
+}
+
+/* Gestion du mode sombre */
+@media (prefers-color-scheme: dark) {
+  .nav_menu {
+    background-color: red !important;
+  }
+}

@@ -1,0 +1,161 @@
+:root {
+  --main-color: rgb(62, 60, 65);
+  --second-color: rgb(225, 231, 243);
+  --principal-text-color: rgb(183, 204, 219);
+  --other-color: rgb(241, 241, 243);
+  --pink-light: #DD70D1;
+  --pink-dark: #DBA8D9;
+  --purple: #8687FC;
+  --blue: #92C7F2;
+  --font-family: 'Calisto MT', sans-serif;
+  --title-font-size: 1.25rem;
+  --subtitle-font-size: 1rem;
+  --text-font-size: 0.875rem;
+  --other-font-size: 0.75rem;
+  --curve: 2.5rem;
+}
+
+
+/* Cartes des films et séries */
+.movies_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: 1.25rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  place-items: center;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  min-width: 18.75rem;
+  min-height: 17.5rem;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.015625rem 0.015625rem 0.03125rem rgba(0, 0, 0, 0.25);
+}
+
+.card__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.card__content {
+  --flow-space: 0.9375rem;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  max-height: 100%;
+  align-self: flex-end;
+  height: 100%;
+  padding: 1.5rem 1.25rem 1.875rem;
+  background: linear-gradient(180deg,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.3) 10%,
+      hsl(0, 0%, 0%) 100%);
+}
+
+.card__description {
+  text-align: justify;
+  color: var(--second-color);
+  font-size: var(--text-font-size);
+}
+
+.card__title {
+  color: var(--second-color);
+  font-size: var(--title-font-size);
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.card__title::after {
+  content: "";
+  position: absolute;
+  height: 0.03125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--principal-text-color);
+}
+
+.badge {
+  border: none;
+  margin-top: 1.25rem;
+  margin-bottom: 0.3125rem;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  .card__content {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  .card__title::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  .card__background {
+    transition: transform 500ms ease-in;
+  }
+
+  .card__description {
+    padding: 0;
+  }
+
+  .card__content--container> :not(.card__title),
+  .card__button {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .card:hover,
+  .card:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  .card:hover .card__content,
+  .card:focus-within .card__content {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  .card:focus-within .card__content {
+    transition-duration: 0ms;
+  }
+
+  .card:hover .card__background,
+  .card:focus-within .card__background {
+    transform: scale(1.3);
+  }
+
+  .card:hover .card__content--container> :not(.card__title),
+  .card:hover .card__button,
+  .card:focus-within .card__content--container> :not(.card__title),
+  .card:focus-within .card__button {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+  }
+
+  .card:hover .card__title::after,
+  .card:focus-within .card__title::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
+}

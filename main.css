@@ -1,0 +1,214 @@
+:root {
+    --main-color: rgb(62, 60, 65);
+    --second-color: rgb(225, 231, 243);
+    --principal-text-color: rgb(183, 204, 219);
+    --other-color: rgb(241, 241, 243);
+    --pink-light: #DD70D1;
+    --pink-dark: #DBA8D9;
+    --purple: #8687FC;
+    --blue: #92C7F2;
+    --font-family: 'Calisto MT', sans-serif;
+    --title-font-size: 1.25rem;
+    --subtitle-font-size: 1rem;
+    --text-font-size: 0.875rem;
+    --other-font-size: 0.75rem;
+    --curve: 2.5rem;
+}
+
+/* Main parameters */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--other-color);
+}
+
+h1 {
+    font-size: var(--title-font-size);
+}
+
+.subtitle {
+    font-size: var(--subtitle-font-size);
+    text-align: justify;
+}
+
+p {
+    font-size: var(--text-font-size);
+}
+
+main {
+    position: relative;
+    width: calc(min(90rem, 90%));
+    margin: 0 auto;
+    column-gap: 3rem;
+    padding-block: min(20vh, 3rem);
+}
+
+main>div span {
+    text-transform: uppercase;
+    letter-spacing: 0.09375rem;
+    color: var(--principal-text-color);
+}
+
+.section_title {
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    font-weight: 800;
+    background-image: linear-gradient(45deg, var(--principal-text-color), var(--purple));
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+main>div hr {
+    display: block;
+    height: 0.25rem;
+    width: 6.25rem;
+    border: none;
+    margin: 1.125rem 0 1.875rem 0;
+}
+
+main text {
+    font-size: var(--text-font-size);
+}
+
+main>div p {
+    line-height: 1.6;
+    font-size: var(--text-font-size);
+}
+
+main a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--principal-text-color);
+    font-weight: 500;
+    background: white;
+    border-radius: 3.125rem;
+    transition: 0.3s ease-in-out;
+}
+
+main>div>a {
+    border: 0.125rem solid var(--second-color);
+    margin-top: 2.188rem;
+    padding: 0.625rem 1.875rem;
+}
+
+
+/*Accessibility Frame*/
+#accessibilityFrame {
+    position: absolute;
+    display: none;
+    top: 5.625rem;
+    right: 1.25rem;
+    width: auto;
+    background-color: white;
+    z-index: 1000;
+    padding: 0.625rem;
+    box-shadow: 0.1875rem 0.1875rem 0.1125rem 0.125rem var(--principal-text-color);
+}
+
+#accessibilityFrame h5 {
+    font-size: var(--title-font-size);
+    color: var(--main-color);
+}
+
+.size_button {
+    background-color: #92C7F2;
+    border: none;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.accessibility_card {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.accessibility_card label {
+    font-size: var(--text-font-size);
+    display: block;
+    margin-bottom: 0.625rem;
+}
+
+.accessibility_text_size {
+    border: 0.125rem solid var(--principal-text-color);
+    border-radius: 2rem;
+    padding: 0.625rem;
+    width: 12.5rem;
+    height: 4.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accessibility_text_size img {
+    height: 2.125rem;
+}
+
+/* Bandeau droits d'auteurs */
+footer {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 10px;
+}
+
+footer i,
+footer p {
+    margin: 0;
+    /* Removes default margin */
+}
+
+
+/* Modifier la taille du contenu principal pour les écrans moyens  */
+@media (min-width: 25.875rem) and (max-width: 80rem) {
+    .frame {
+        width: 75% !important;
+    }
+}
+
+/* Gestion du mode sombre */
+@media (prefers-color-scheme: dark) {
+    .section_title {
+        text-transform: capitalize;
+        letter-spacing: 0.05rem;
+        font-weight: 800;
+        background-image: linear-gradient(45deg, var(--principal-text-color), var(--purple));
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+
+    .container-fluid {
+        font-family: var(--font-family);
+        background-color: var(--main-color);
+        color: white
+    }
+
+    footer {
+        background-color: var(--main-color);
+        color: white;
+    }
+
+    .accessibility_img {
+        content: url(img/dark_accessibility.webp);
+    }
+
+    #accessibilityFrame {
+        background-color: var(--main-color);
+    }
+
+    #accessibilityFrame h5 {
+        color: white;
+    }
+}
